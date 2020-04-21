@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension StyleObject where Base: UIScrollView {
+public extension StyleObject where Base: UIScrollView {
     @discardableResult func contentOffset(_ offset: CGPoint) -> Self {
         base.contentOffset = offset
         return self
